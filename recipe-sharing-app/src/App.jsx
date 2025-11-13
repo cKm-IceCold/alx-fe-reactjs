@@ -1,35 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import SearchBar from './components/SearchBar';
 import RecipeList from './components/RecipeList';
-import RecipeDetails from './components/RecipeDetails';
 import AddRecipeForm from './components/AddRecipeForm';
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-4">Recipe Sharing App</h1>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <AddRecipeForm />
-                <RecipeList />
-              </>
-            }
-          />
-          <Route path="/recipe/:id" element={<RecipeDetailsWrapper />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="max-w-lg mx-auto my-10 p-5 bg-white rounded-lg shadow">
+      <h1 className="text-2xl font-bold text-center mb-6">🍳 Recipe Sharing App</h1>
+      <SearchBar /> {/* ✅ New Search Component */}
+      <AddRecipeForm />
+      <RecipeList />
+    </div>
   );
-}
-
-// Wrapper to get recipeId from URL params
-import { useParams } from 'react-router-dom';
-const RecipeDetailsWrapper = () => {
-  const { id } = useParams();
-  return <RecipeDetails recipeId={Number(id)} />;
 };
 
 export default App;
