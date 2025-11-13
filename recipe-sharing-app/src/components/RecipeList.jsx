@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import useRecipeStore  from './recipeStore';
-
+import useRecipeStore from './recipeStore';
+import { Link } from 'react-router-dom';
 
 const RecipeList = () => {
   const recipes = useRecipeStore((state) => state.recipes);
@@ -11,7 +11,7 @@ const RecipeList = () => {
   // Automatically filter when the search term changes
   useEffect(() => {
     filterRecipes();
-  }, [searchTerm]);
+  }, [searchTerm, filterRecipes]); // Make sure filterRecipes is included in deps
 
   const displayList = searchTerm ? filteredRecipes : recipes;
 
@@ -23,7 +23,12 @@ const RecipeList = () => {
             key={recipe.id}
             className="border p-3 rounded-md bg-gray-50 shadow-sm"
           >
-            <h3 className="text-lg font-semibold">{recipe.title}</h3>
+            <Link
+              to={`/recipe/${recipe.id}`}
+              className="text-lg font-semibold text-blue-600 hover:underline"
+            >
+              {recipe.title}
+            </Link>
             <p className="text-gray-700">{recipe.description}</p>
           </div>
         ))
