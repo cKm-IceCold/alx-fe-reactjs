@@ -1,0 +1,24 @@
+import useRecipeStore from '../store/recipeStore';
+import EditRecipeForm from './EditRecipeForm';
+import DeleteRecipeButton from '../components/DeleteRecipeButton';
+
+const RecipeDetails = ({ recipeId }) => {
+  const recipe = useRecipeStore((state) =>
+    state.recipes.find((r) => r.id === recipeId)
+  );
+
+  if (!recipe) return <p>Recipe not found!</p>;
+
+  return (
+    <div>
+      <h1 className="text-xl font-bold">{recipe.title}</h1>
+      <p>{recipe.description}</p>
+
+      {/* Edit and Delete Options */}
+      <EditRecipeForm recipe={recipe} />
+      <DeleteRecipeButton recipeId={recipe.id} />
+    </div>
+  );
+};
+
+export default RecipeDetails;
