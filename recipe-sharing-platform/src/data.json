@@ -1,0 +1,91 @@
+[
+    {
+        "id": 1,
+        "title": "Spaghetti Carbonara",
+        "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+        "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&q=80&w=800",
+        "ingredients": [
+            "200g Spaghetti",
+            "100g Pancetta",
+            "2 Large Eggs",
+            "50g Pecorino Cheese",
+            "Black Pepper",
+            "Salt"
+        ],
+        "instructions": [
+            "Boil water in a large pot with salt.",
+            "Cook spaghetti until al dente.",
+            "Fry pancetta in a pan until crispy.",
+            "Beat eggs and cheese in a bowl.",
+            "Combine pasta with pancetta, remove from heat, and mix in egg mixture quickly.",
+            "Serve with extra pepper and cheese."
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Chicken Tikka Masala",
+        "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&q=80&w=800",
+        "ingredients": [
+            "500g Chicken Breast",
+            "1 cup Yogurt",
+            "2 tbsp Tikka Masala Paste",
+            "1 onion, chopped",
+            "1 can Tomato Puree",
+            "1 cup Heavy Cream",
+            "Coriander for garnish"
+        ],
+        "instructions": [
+            "Marinate chicken in yogurt and spices for 1 hour.",
+            "Grill or fry chicken until cooked.",
+            "Sauté onions in a pan until soft.",
+            "Add tomato puree and simmer.",
+            "Stir in cream and cooked chicken.",
+            "Simmer for 10 minutes and garnish with coriander."
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Vegetable Stir Fry",
+        "summary": "A quick and healthy stir fry with fresh vegetables and a savory sauce.",
+        "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=800",
+        "ingredients": [
+            "1 Broccoli head",
+            "2 Carrots",
+            "1 Red Bell Pepper",
+            "200g Snap Peas",
+            "3 tbsp Soy Sauce",
+            "1 tbsp Sesame Oil",
+            "Ginger and Garlic"
+        ],
+        "instructions": [
+            "Chop all vegetables into bite-sized pieces.",
+            "Heat sesame oil in a wok or large pan.",
+            "Stir fry ginger and garlic for 30 seconds.",
+            "Add vegetables and stir fry for 5-7 minutes.",
+            "Add soy sauce and toss to coat.",
+            "Serve hot over rice or noodles."
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Beef Tacos",
+        "summary": "Crispy or soft tortilla shells filled with seasoned beef, lettuce, cheese, and salsa.",
+        "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&q=80&w=800",
+        "ingredients": [
+            "500g Ground Beef",
+            "1 packet Taco Seasoning",
+            "8 Taco Shells",
+            "1 cup Shredded Cheese",
+            "1 cup Lettuce, shredded",
+            "Salsa and Sour Cream"
+        ],
+        "instructions": [
+            "Brown ground beef in a skillet.",
+            "Drain fat and add taco seasoning with water as per packet instructions.",
+            "Simmer until sauce thickens.",
+            "Warm taco shells in the oven.",
+            "Fill shells with beef and top with cheese, lettuce, salsa, and sour cream."
+        ]
+    }
+]

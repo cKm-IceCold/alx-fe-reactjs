@@ -1,16 +1,11 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 
-const PostDetail = () => {
-  const { postId } = useParams();
+const ProfileDetails = () => (
+  <div style={{ padding: '10px' }}>
+    <h4>User Details Content</h4>
+    <p>This information is only available when the URL is `/profile/details`.</p>
+    <p>This is rendered inside the parent Profile component via the {'<Outlet />'} component.</p>
+  </div>
+);
 
-  return (
-    <div>
-      <h3>Blog Post Detail (Dynamic)</h3>
-      <p>Viewing post with ID: <strong>{postId}</strong></p>
-      <p>This URL structure allows us to load specific content based on the parameter.</p>
-    </div>
-  );
-};
-
-export default PostDetail;
+export default ProfileDetails;
