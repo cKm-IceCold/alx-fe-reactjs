@@ -27,6 +27,15 @@ function App() {
         {/* Dynamic route */}
         <Route path="/blog/:id" element={<BlogPost />} />
       </Routes>
+      <Route
+  path="/profile/*"
+  element={
+    <ProtectedRoute>
+      <Profile />
+    </ProtectedRoute>
+  }
+/>
+
     </BrowserRouter>
   );
 }
